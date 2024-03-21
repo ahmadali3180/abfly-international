@@ -11,7 +11,7 @@ import { Routes, Route } from "react-router-dom";
 
 const MainApp = () => {
   return (
-    <div className="w-full">
+    <div className="max-w-[1440px] mx-auto scroll-smooth">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

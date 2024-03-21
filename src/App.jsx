@@ -5,7 +5,7 @@ import MainApp from "./MainApp";
 
 const App = () => {
   return (
-    <div className="w-full max-w-8xl p-4 bg-gradient-to-b from-gray-900 to-indigo-950">
+    <div className="w-full p-4 scroll-smooth bg-gradient-to-b from-gray-900 from-50% to-100%  to-darkblue-custom/90">
       <Navbar />
       <MainApp />
       <Footer />

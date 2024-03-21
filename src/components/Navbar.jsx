@@ -38,10 +38,10 @@ const Navbar = () => {
   }, [location, prevScrollPos]);
 
   return (
-    <div className="flex justify-between px-8 md:px-10 lg:px-14 py-1.5 items-center w-full fixed z-10 z-3000">
+    <div className="flex justify-between px-8 md:px-10 lg:px-14 items-center w-full fixed z-10 -mt-4 py-3 backdrop-blur-md bg-gray-900/90">
       <MainMenu menu={menu} setMenu={setMenu} />
       {/* Logo */}
-      <div className="flex gap-3">
+      <div className="xxs:-ml-8 flex gap-3">
         <Link to="/">
           <img src="/logo-thumb.png" alt="logo" className="w-16 h-14" />
         </Link>
@@ -50,15 +50,15 @@ const Navbar = () => {
         </p>
       </div>
       {/* NavLinks */}
-      <nav className="xxs:hidden sm:flex gap-6">
+      <nav className="xxs:hidden sm:flex gap-10 items-center">
         {NavLinks.map((link) => (
           <Link
             key={link.text}
             to={link.to}
-            className={`hover:text-gray-300 transition duration-500 ease-in-out ${
+            className={`hover:text-white transition duration-500 ease-in-out ${
               activeLink === link.to
-                ? "text-gray-300 font-semibold"
-                : "text-gray-300/70"
+                ? "text-white font-semibold"
+                : "text-white/70"
             }`}
           >
             {link.text}
@@ -85,7 +85,7 @@ const MainMenu = ({ menu, setMenu }) => {
 
   return (
     <div
-      className={`fixed top-0  h-[100vh] w-full backdrop-blur-md bg-gray-900/90 transition-all flex justify-center align-center shadow-sm shadow-black/10 ${
+      className={`fixed top-0  h-[100vh] w-full backdrop-blur-md bg-gray-900/90 transition-all flex justify-center items-center shadow-sm shadow-black/10 ${
         menu ? "left-0" : "left-[100%]"
       }`}
     >
@@ -97,6 +97,23 @@ const MainMenu = ({ menu, setMenu }) => {
         }}
         className="absolute top-10 cursor-pointer right-6 h-7"
       />
+
+      <nav className="flex flex-col gap-8 text-center text-lg -mt-24">
+        {NavLinks.map((link) => (
+          <Link
+            to={link.to}
+            className={`hover:text-gray-300 transition duration-500 ease-in-out ${
+              activeLink === link.to
+                ? "text-gray-300 font-semibold"
+                : "text-gray-300/70"
+            }`}
+            onClick={() => setMenu(false)}
+            key={link.text}
+          >
+            {link.text}
+          </Link>
+        ))}
+      </nav>
     </div>
   );
 };
