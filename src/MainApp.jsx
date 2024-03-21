@@ -18,6 +18,7 @@ const MainApp = () => {
         <Route path="/catalogue" element={<Catalogues />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/:cata" element={<CatalogueView />} />
+        <Route path="/:prodId" element={<ProductDetails />} />
         <Route path="/:cata/:prodId" element={<ProductDetails />} />
       </Routes>
     </div>

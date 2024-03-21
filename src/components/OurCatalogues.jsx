@@ -27,7 +27,7 @@ const OurCatalogues = () => {
   return (
     <section className="xxs:px-2 sm:px-6 lg:px-12 xl:px-24 md:mt-40 mt-32">
       <h2 className="text-4xl font-medium text-white">Our Catalogues.</h2>
-      <div className="flex justify-evenly mx-auto items-center my-24">
+      <div className="flex xxs:flex-col md:flex-row justify-evenly mx-auto items-center my-24 gap-6">
         {catalogs.map((cat) => (
           <CatalogueCard
             title={cat.name}
