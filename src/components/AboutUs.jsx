@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutUs = () => {
   return (
-    <div
+    <section
       className="xxs:px-2 sm:px-6 lg:px-12 xl:px-24 md:mt-40 mt-32"
       id="about"
     >
@@ -30,9 +30,9 @@ const AboutUs = () => {
         />
       </div>
       {/* About Main */}
-      <div className="flex gap-10 w-full mx-auto mt-40 items-center">
+      <div className="xxs:flex-col lg:flex-row flex gap-10 w-full mx-auto mt-40 items-center">
         {/* About content */}
-        <div className="flex flex-col gap-10 w-2/3">
+        <div className="flex flex-col gap-10 w-full lg:w-2/3">
           <h2 className="text-4xl font-medium text-white">About Us.</h2>
           <p className="text-white text-base font-[200]">
             At{" "}
@@ -50,8 +50,8 @@ const AboutUs = () => {
           </p>
         </div>
         {/* About Image */}
-        <div className="hidden relative lg:flex flex-row gap-4 justify-end">
-          <div className="flex flex-col gap-4 mt-16">
+        <div className="relative flex gap-4 justify-end">
+          <div className="flex lg:flex-col gap-4 mt-16 xxs:flex-row">
             <img
               src="/s12.jpeg"
               alt=""
@@ -60,10 +60,10 @@ const AboutUs = () => {
             <img
               src="/s14.jpeg"
               alt=""
-              className="w-[200px] h-[300px] rounded-2xl shadow-md shadow-black/90 object-cover"
+              className="w-[200px] h-[300px] rounded-2xl shadow-md shadow-black/90 object-cover xxs:-mt-16 sm:mt-0"
             />
           </div>
-          <div className="mt-[50%]">
+          <div className="hidden md:flex lg:mt-[50%] md:mt-[10%]">
             <img
               src="/s18.jpeg"
               alt=""
@@ -72,7 +72,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

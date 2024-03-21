@@ -4,7 +4,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 
 const Hero = () => {
   return (
-    <div
+    <section
       className="flex xxs:flex-col-reverse md:flex-row xxs:mt-20 md:mt-24 lg:mt-32 items-center text-left xxs:px-4 sm-px-8 lg:px-16 justify-center gap-20"
       id="home"
     >
@@ -38,7 +38,7 @@ const Hero = () => {
           className="xxs:h-80 xxs:w-80 lg:w-96 lg:h-96 rounded-full shadow-lg shadow-gray-900"
         />
       </div>
-    </div>
+    </section>
   );
 };
 
