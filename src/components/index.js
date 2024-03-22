@@ -9,6 +9,9 @@ import CustomerReviews from "./CustomerReviews";
 import FeaturedProducts from "./FeaturedProducts";
 import Hero from "./Hero";
 import Button from "./Button";
+import WelcomeAbout from "./WelcomeAbout";
+import QualityAssurance from "./QualityAssurance";
+import AboutContent from "./AboutContent";
 
 export {
   Navbar,
@@ -22,4 +25,7 @@ export {
   FeaturedProducts,
   CustomerReviews,
   Button,
+  WelcomeAbout,
+  QualityAssurance,
+  AboutContent,
 };

@@ -38,7 +38,7 @@ const Navbar = () => {
   }, [location, prevScrollPos]);
 
   return (
-    <div className="flex justify-between px-8 md:px-10 lg:px-14 items-center w-full fixed z-10 -mt-4 py-3 backdrop-blur-md bg-gray-900/90">
+    <div className="flex justify-between px-8 md:px-10 lg:px-14 items-center w-full z-10 py-2 backdrop-blur-md bg-gray-900/90 fixed top-0">
       <MainMenu menu={menu} setMenu={setMenu} />
       {/* Logo */}
       <div className="xxs:-ml-8 flex gap-3">

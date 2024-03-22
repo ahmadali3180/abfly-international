@@ -17,9 +17,10 @@ const MainApp = () => {
         <Route path="/about" element={<About />} />
         <Route path="/catalogue" element={<Catalogues />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/:cata" element={<CatalogueView />} />
+        <Route path="/catalogue/:cataId" element={<CatalogueView />} />
+        <Route path="/:cataId" element={<CatalogueView />} />
+        <Route path="/catalogue/:cataId/:prodId" element={<ProductDetails />} />
         <Route path="/:prodId" element={<ProductDetails />} />
-        <Route path="/:cata/:prodId" element={<ProductDetails />} />
       </Routes>
     </div>
   );
