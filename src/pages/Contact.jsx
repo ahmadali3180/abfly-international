@@ -55,7 +55,7 @@ const Contact = () => {
               </div>
             </div>
             {/* Product Code  */}
-            <div className="flex flex-col gap-3">
+            {/* <div className="flex flex-col gap-3">
               <label
                 htmlFor="Product"
                 className="block lg:text-lg font-semibold leading-6"
@@ -70,7 +70,7 @@ const Contact = () => {
                   className="block w-full rounded-lg border-0 px-3.5 py-2 text-text-primary shadow-sm placeholder:text-gray-400 sm:text-sm sm:leading-6 bg-[#474C6D]"
                 />
               </div>
-            </div>
+            </div> */}
             {/* message  */}
             <div className="flex flex-col gap-3">
               <label
