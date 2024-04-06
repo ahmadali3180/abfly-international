@@ -1,0 +1,32 @@
+{
+  "catalogue": {
+    "name": "Example Catalogue",
+    "productCount": 3,
+    "products": [
+      {
+        "id": 1,
+        "code": "ABC123",
+        "name": "Product 1",
+        "color": "Red",
+        "description": "This is Product 1",
+        "image": "product1.jpg"
+      },
+      {
+        "id": 2,
+        "code": "DEF456",
+        "name": "Product 2",
+        "color": "Blue",
+        "description": "This is Product 2",
+        "image": "product2.jpg"
+      },
+      {
+        "id": 3,
+        "code": "GHI789",
+        "name": "Product 3",
+        "color": "Green",
+        "description": "This is Product 3",
+        "image": "product3.jpg"
+      }
+    ]
+  }
+}

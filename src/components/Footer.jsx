@@ -14,14 +14,14 @@ const Footer = () => (
             <input
               type="text"
               placeholder="Your name"
-              className="py-3 px-6 rounded-full w-full"
+              className="py-3 px-6 rounded-full w-full text-blue-custom font-medium"
             />
           </div>
           <div className="flex md:w-100 max-w-[300px] mx-auto">
             <input
               type="email"
               placeholder="Your Email"
-              className="py-3 px-6 rounded-full min-w-[300px] md:w-80"
+              className="py-3 px-6 rounded-full min-w-[300px] md:w-80 text-blue-custom font-medium"
             />
             <button className="text-white font-medium bg-blue-custom rounded-full px-5 relative right-[5.15rem] my-[0.2rem]">
               send

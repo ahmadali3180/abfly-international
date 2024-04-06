@@ -22,7 +22,7 @@ const Contact = () => {
             <div className="flex flex-col gap-3">
               <label
                 htmlFor="name"
-                className="block lg:text-xl text-base font-semibold leading-6"
+                className="block lg:text-lg text-base font-semibold leading-6"
               >
                 Name *
               </label>
@@ -41,7 +41,7 @@ const Contact = () => {
             <div className="flex flex-col gap-3">
               <label
                 htmlFor="email"
-                className="block lg:text-xl font-semibold leading-6"
+                className="block lg:text-lg font-semibold leading-6"
               >
                 Email *
               </label>
@@ -55,10 +55,10 @@ const Contact = () => {
               </div>
             </div>
             {/* Product Code  */}
-            <div className="flex flex-col gap-3">
+            {/* <div className="flex flex-col gap-3">
               <label
                 htmlFor="Product"
-                className="block lg:text-xl font-semibold leading-6"
+                className="block lg:text-lg font-semibold leading-6"
               >
                 Products for Inquiry
               </label>
@@ -70,12 +70,12 @@ const Contact = () => {
                   className="block w-full rounded-lg border-0 px-3.5 py-2 text-text-primary shadow-sm placeholder:text-gray-400 sm:text-sm sm:leading-6 bg-[#474C6D]"
                 />
               </div>
-            </div>
+            </div> */}
             {/* message  */}
             <div className="flex flex-col gap-3">
               <label
                 htmlFor="message"
-                className="block lg:text-xl font-semibold leading-6"
+                className="block lg:text-lg font-semibold leading-6"
               >
                 Message
               </label>
@@ -102,15 +102,15 @@ const Contact = () => {
           {/* Contact Details */}
           <div className="md:text-base text-sm text-lightblue-custom flex flex-col gap-4 sm:px-0 px-4 xs:px-8">
             <div className="flex flex-col gap-3">
-              <h1 className="font-medium lg:text-2xl text-white">Email</h1>
+              <h1 className="font-medium lg:text-lg text-white">Email</h1>
               <Link>info@abflyinternational.com</Link>
             </div>
             <div className="flex flex-col gap-3">
-              <h1 className="font-medium lg:text-2xl text-white">WhatsApp</h1>
+              <h1 className="font-medium lg:text-lg text-white">WhatsApp</h1>
               <Link>030003000300</Link>
             </div>
             <div className="flex flex-col gap-3">
-              <h1 className="font-medium lg:text-2xl text-white">Instagram</h1>
+              <h1 className="font-medium lg:text-lg text-white">Instagram</h1>
               <Link>@ig_ahmadali</Link>
             </div>
           </div>
